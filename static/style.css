@@ -1,0 +1,181 @@
+/* resetting the css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+
+}
+#navbar{
+        backdrop-filter: blur(10px);
+}
+#logo{
+    height: 57px;
+    color: white;
+    align-items:center;
+    display: flex;
+    margin-right: auto;
+}
+#logo img{
+    height: 57px;
+    margin-right: 6px; 
+    border: 2px solid white;
+    border-radius: 10px; 
+    filter: invert(1);  
+}
+#navbar ul{
+    display: flex;
+    justify-content: center;
+    /* backdrop-filter: blur(10px); */
+    background-color: black;
+    
+}
+#navbar ul li{
+    list-style: none;
+    font-family: cursive;
+    padding: 10px 25px;
+    margin: 7px 4px;
+}
+#navbar ul li a:hover{
+    color: rgb(255, 126, 103);
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+
+}
+#forpicture{
+    height: 350px;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+    
+}
+.bgimage{
+    background: url(/static/bg.jpg) no-repeat center/cover;
+    height: 800px;
+
+}
+/* #cardcontainer{
+    display: flex;
+    flex-direction: row;
+    height: 430px;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+
+} */
+.card{
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+
+}
+.mission{
+    display: block;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+.forcard{
+    height: 33%;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 45%;
+    margin: 10px 25px;
+    text-align: center;
+   
+}
+#card1{
+    background: url(/static/mission-1.jpg) no-repeat center/cover;
+    color: white;
+}
+#card2{
+    background: url(/static/misson-2.jpg) no-repeat center/cover;
+    color: white;
+}
+#card3{
+    background: url(/static/mission-3.jpg) no-repeat center/cover;
+    color: white;
+}
+.smallText{
+    font-size: 28px;
+    text-align: center;
+    justify-content: center;
+}
+#forsponsers {
+    height: 300px;
+    background-color: rgb(231, 228, 228);
+}
+#forsponsers h2 {
+    font-size: 33px;
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sponsorlogo{
+    height: 236px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spimage{
+    height: 122px;
+    padding: 14px;
+    margin: 10px;
+}
+
+#footer{
+    height: 38px;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.foreground {
+    backdrop-filter: blur(20px);
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin-top: -120px;  }
+
+.backblur{
+    backdrop-filter: blur(20px);
+   
+}
+.forcard p{
+    margin: 12x ;
+    padding: 3px;
+}
+
+
+/* Responsive design  */
+@media screen  and (max-width:1170px) {
+
+   .card{
+       flex-direction: column;
+       /* width: fit-content; */
+   }
+    /* .homecontainer{
+        width: fit-content;
+    } */
+    .forcard{
+        width: 80vw;
+        height: 150px;
+    }
+   .bgimage{
+       height: 1100px;
+   }
+}

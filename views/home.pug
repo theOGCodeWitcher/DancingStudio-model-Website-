@@ -1,0 +1,33 @@
+extends layout.pug 
+
+block scripts
+    script(src="/static/index.js") 
+
+block style 
+    style
+      include ../static/style.css
+
+block content
+    div.bgimage 
+        section#forpicture
+            div.homecontainer
+                div.foreground#h1 Welcome! to Nora fatehi's Dance academy
+                div.smallText#h2 Live to Dance
+        h2.mission  Our Mission
+        section#cardcontainer 
+            div.card 
+                div.forcard#card1 
+                    div.backblur Customised Training
+                    p.backblur Get the training customised as per your needs
+                div.forcard#card2 
+                    div.backblur All Round Development
+                    p.bakcblur Focus on development on all facets 
+                div.forcard#card3 
+                    div.backblur Equal Oppurtunity
+                    p.backblur each one get's equal oppurtunity to shine 
+    section#forsponsers  
+        h2 Our Sponsors   
+        div#sponsorlogo 
+            img(src="/static/logo1.png", alt="sponsor logo" class='spimage')
+            img(src="/static/logo2.png", alt="sponsor logo" class='spimage' id='facebooklogo')
+            img(src="/static/logo3.png", alt="sponsor logo" class='spimage')
